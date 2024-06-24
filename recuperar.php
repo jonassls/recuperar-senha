@@ -68,4 +68,5 @@ try {
 } catch (Exception $e) {
     echo "Não foi possível enviar o email.
     Mailer Error:{$mail->ErrorInfo}";
+    echo "<a href='login.php'Voltar></a>";
 }
