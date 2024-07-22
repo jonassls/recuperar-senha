@@ -26,6 +26,12 @@ if ($recuperar == null) {
     Faça um novo pedido de recuperação de senha.";
         die();
     }
+    if ($recuperar['usado'] == 1) {
+        echo "Esse pedido de recuperação de senha já foi utilizado
+        anteriormente! para recuperar a senha faça um novo pedido
+        de recuperação de senha.";
+        die();
+    }
 }
 ?>
 <!DOCTYPE html>
